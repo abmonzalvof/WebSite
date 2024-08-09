@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mintcream: '#F3FFF9';
+  --sapphire: '#2950B2';
+  --periwinkle: '#D8C3FF';
+  --richblack: '#01071B';
+  --raisinblack: '#1C1A1F';
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(./assets/font/Barlow/Barlow-Regular.ttf);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Barlow !important; }
+
+/*Containers*/
+div#background {
+  background-image: url(./assets/img/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+div.container-1 {
+  border-radius: 16px;
+  @apply bg-sapphire-225
+}
