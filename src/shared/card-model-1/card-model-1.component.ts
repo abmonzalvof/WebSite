@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Card } from '../../Models/card.model';
 
 @Component({
   selector: 'app-card-model-1',
@@ -8,6 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card-model-1.component.scss'
 })
 export class CardModel1Component {
-  @Input() title: 'title' | string = 'title'
-  @Input() description: 'desc' | string = 'desc'
+  @Input() card: Card = new Card()
+
 }
