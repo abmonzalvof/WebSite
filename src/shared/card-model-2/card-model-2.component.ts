@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { Card2 } from '../../Models/card.model';
 
 @Component({
   selector: 'app-card-model-2',
@@ -9,10 +10,6 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './card-model-2.component.scss'
 })
 export class CardModel2Component {
-  @Input() title: string = 'title'
-  @Input() description: string = 'desc'
-  @Input() dates: string = 'dates'
-  @Input() institution: string = 'institution'
-  @Input() link: string = ''
+  @Input() card: Card2 = new Card2()
 
 }

@@ -5,7 +5,7 @@
             [routerLink]="item.link"
             [routerLinkActive]="'bg-mintcream-500 text-raisinblack-500'"
         >
-            {{ item.name }}
+            {{ item.name | titlecase}}
         </a>
     }
 </nav>

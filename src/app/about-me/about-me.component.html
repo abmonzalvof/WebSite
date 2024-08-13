@@ -1,14 +1,18 @@
 <div class="h-full flex flex-wrap justify-between">
     <div class="w-full h-[48%] flex flex-wrap justify-between content-center">
         <app-band-title-1 class="h-full" title="knowledge"></app-band-title-1>
-        <div class="w-fit h-fit overflow-x-visible">
-            <app-card-model-1></app-card-model-1>
+        <div class="min-w-[90%] max-w-[90%] h-full flex justify-between gap-x-3 pb-2 overflow-x-auto">
+            @for(item of knowledge; track item){
+                <app-card-model-1 class="min-w-[32%]" [card]="item"></app-card-model-1>
+            }
         </div>
     </div>
     <div class="w-full h-[48%] flex flex-wrap justify-between content-center">
-        <app-band-title-1 class="h-full"></app-band-title-1>
-        <div class="w-fit h-fit overflow-x-visible">
-            <app-card-model-2></app-card-model-2>
+        <app-band-title-1 class="h-full" title="career"></app-band-title-1>
+        <div class="min-w-[90%] max-w-[90%] h-full flex justify-between gap-x-3 pb-2 overflow-x-auto">
+            @for(item of career; track item){
+                <app-card-model-2 class="min-w-[32%]" [card]="item"></app-card-model-2>
+            }
         </div>
     </div>
 </div>
