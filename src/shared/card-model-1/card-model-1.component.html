@@ -2,7 +2,10 @@
     <label class="w-full text-3xl text-richblack-500">
         {{card.title}}
     </label>
-    <div class="w-full h-4/6 p-3 flex flex-wrap justify-center content-center border border-mintcream-350 text-raisinblack-500 text-xl overflow-y-hidden whitespace-pre">
+    <div class="w-full h-4/6 p-3 flex flex-wrap justify-evenly content-center border border-mintcream-350 text-raisinblack-500 text-base overflow-y-hidden whitespace-pre">
         <p>{{card.description}}</p>
+        @if(card.items.length > 5){
+            <p>{{card.description2}}</p>
+        }
     </div>
 </div>
