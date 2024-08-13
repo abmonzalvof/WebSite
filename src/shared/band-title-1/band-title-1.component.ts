@@ -9,5 +9,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './band-title-1.component.scss'
 })
 export class BandTitle1Component {
-  @Input() title: 'title' | string = 'title'
+  @Input() title: string = 'title'
+  public titles: Map<string,string> = new Map<string,string>([
+    ['title', './../../assets/img/title-default.svg'],
+    ['knowledge','./../../assets/img/title-knowledge.svg'],
+    ['career','./../../assets/img/title-career.svg'],
+  ])
 }
