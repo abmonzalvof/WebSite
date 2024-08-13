@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Paths } from '../../Models/paths';
 
 @Component({
   selector: 'app-navbar',
@@ -9,26 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  public routes: Array<{name: string, link: string}> = [
-    {
-      name: 'Home',
-      link: '/home'
-    },
-    {
-      name: 'About me',
-      link: '/about'
-    },
-    {
-      name: 'Certifications',
-      link: '/cert'
-    },
-    {
-      name: 'Experience',
-      link: '/exp'
-    },
-    {
-      name: 'Contact',
-      link: '/contact'
-    }
-  ]
+  public routes: Array<{name: string, link: string}> = Paths
 }
