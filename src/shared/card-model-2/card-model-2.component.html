@@ -1,1 +1,17 @@
-<p>card-model-2 works!</p>
+<div class="card-model-1 h-full p-3 flex flex-wrap justify-center content-between bg-raisinblack-250 rounded-lg">
+    <label class="w-full text-3xl text-mintcream-350">
+        {{title}}
+    </label>
+    <div class="w-full flex flex-wrap text-mintcream-200 mb-3">
+        @if(link.length > 0){
+            <a [href]="link">
+                <mat-icon>open_in_new</mat-icon>
+            </a>
+        }
+        <label class="text-2xl">{{institution}}</label>
+        <label class="w-full text-base">{{dates}}</label>
+    </div>
+    <div class="w-full h-1/2 p-3 flex flex-wrap justify-start content-center border border-raisinblack-100 text-mintcream-350 text-base overflow-y-hidden whitespace-pre">
+        <p>{{description}}</p>
+    </div>
+</div>
