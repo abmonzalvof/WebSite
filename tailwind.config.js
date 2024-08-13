@@ -10,6 +10,8 @@ module.exports = {
     extend: {
       colors:{
         'mintcream': {
+          140: 'rgb(243,255,249,0.70)',
+          300: 'rgb(243,255,249,0.60)',
           500: '#F3FFF9'
         },
         'sapphire': {
