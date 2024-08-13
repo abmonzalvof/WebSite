@@ -1,17 +1,17 @@
 <div class="card-model h-full p-3 flex flex-wrap justify-center content-between bg-raisinblack-250 rounded-lg">
     <label class="w-full text-3xl text-mintcream-350">
-        {{title}}
+        {{card.title}}
     </label>
     <div class="w-full flex flex-wrap text-mintcream-200 mb-3">
-        @if(link.length > 0){
-            <a [href]="link">
+        @if(card.link.length > 0){
+            <a [href]="card.link">
                 <mat-icon>open_in_new</mat-icon>
             </a>
         }
-        <label class="text-2xl">{{institution}}</label>
-        <label class="w-full text-base">{{dates}}</label>
+        <label class="text-2xl">{{card.institution}}</label>
+        <label class="w-full text-base">{{card.dates}}</label>
     </div>
     <div class="w-full h-1/2 p-3 flex flex-wrap justify-start content-center border border-raisinblack-100 text-mintcream-350 text-base overflow-y-hidden whitespace-pre">
-        <p>{{description}}</p>
+        <p>{{card.description}}</p>
     </div>
 </div>
