@@ -12,7 +12,7 @@ export class NavbarComponent {
   public routes: Array<{name: string, link: string}> = [
     {
       name: 'Home',
-      link: '/'
+      link: '/home'
     },
     {
       name: 'About me',

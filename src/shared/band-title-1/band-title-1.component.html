@@ -1,1 +1,8 @@
-<p>band-title-1 works!</p>
+<div class="w-20 h-full flex flex-wrap justify-start content-center bg-periwinkle-125">
+    <div 
+        class="band-title-1 text-periwinkle-500 text-3xl" 
+        [ngClass]="{'no-default': title != 'title'}"
+    >
+        {{ title | uppercase}}
+    </div>
+</div>

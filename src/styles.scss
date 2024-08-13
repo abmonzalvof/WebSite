@@ -28,3 +28,36 @@ div.container-1 {
   border-radius: 16px;
   @apply bg-sapphire-225
 }
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+  @apply bg-periwinkle-150
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+  @apply bg-periwinkle-300
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   @apply bg-periwinkle-300
+  }
+
+/*Components*/
+.band-title-1 {
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.no-default {
+  position: relative;
+  left: -55%;
+}
+.card-model-1 {
+  width: 400px;
+}
