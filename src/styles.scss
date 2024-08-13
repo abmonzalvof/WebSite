@@ -31,6 +31,7 @@ div.container-1 {
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
+  height: 12px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -46,8 +47,7 @@ div.container-1 {
 ::-webkit-scrollbar-thumb:hover {
    @apply bg-periwinkle-300
   }
-
-/*Components*/
-.card-model-1 {
-  width: 400px;
+/* components */
+.card-model {
+  box-shadow: 0 4px 4px rgb(0,0,0,0.25);
 }
